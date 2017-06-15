@@ -5,6 +5,13 @@
 
 cmake_minimum_required(VERSION 3.4.1)
 
+set(CMAKE_VERBOSE_MAKEFILE on)
+
+# set binary output folder to Android assets folder
+set(EXECUTABLE_OUTPUT_PATH      "${CMAKE_CURRENT_SOURCE_DIR}/src/main/assets/${ANDROID_ABI}")
+
+add_subdirectory (src/main/cpp/helloworld)
+
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
 # You can define multiple libraries, and CMake builds them for you.

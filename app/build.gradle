@@ -27,6 +27,13 @@ android {
             path "CMakeLists.txt"
         }
     }
+    defaultConfig {
+        externalNativeBuild {
+            cmake {
+                targets "helloworld"
+            }
+        }
+    }
 }
 
 dependencies {

@@ -7,4 +7,5 @@ add_executable (
     )
 
 # helloworld, in this example, has mylib as dependency
-target_link_libraries(helloworld)
+target_link_libraries(helloworld log)
+target_include_directories (helloworld PUBLIC)
